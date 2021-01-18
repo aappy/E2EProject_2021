@@ -1,4 +1,4 @@
-package Framework;
+package resources;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ public class base {
 
 		Properties prop = new Properties();	
 		
-		FileInputStream fis = new FileInputStream("/Users/aparnachdhry/eclipse-workspace/E2EProject_2021/src/main/java/data.properties");		
+		FileInputStream fis = new FileInputStream("/Users/aparnachdhry/eclipse-workspace/E2EProject_2021/src/main/java/resources/data.properties");		
 		
 		prop.load(fis);
 		
@@ -27,15 +27,13 @@ public class base {
 
 		if (browserName.equals("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"/Users/aparnachdhry/Documents/Software/drivers/chromedriver/chromedriver");
+			System.setProperty("webdriver.chrome.driver","/Users/aparnachdhry/Documents/Software/drivers/chromedriver/chromedriver");
 			driver = new ChromeDriver();
 		}
 
 		else if (browserName.equals("firefox")) {
 
-			System.setProperty("webdriver.gecko.driver",
-					"/Users/aparnachdhry/Documents/Software/drivers/geckodriver/geckodriver");
+			System.setProperty("webdriver.gecko.driver","/Users/aparnachdhry/Documents/Software/drivers/geckodriver/geckodriver");
 			driver = new FirefoxDriver();
 		}
 
