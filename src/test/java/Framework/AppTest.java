@@ -1,9 +1,8 @@
 package Framework;
 
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+import static org.testng.AssertJUnit.assertTrue;
+import org.testng.annotations.Test;
 
 /**
  * Unit test for simple App.
