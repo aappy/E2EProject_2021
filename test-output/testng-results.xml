@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-19T02:35:19Z" name="Default suite" finished-at="2021-01-19T02:35:27Z" duration-ms="7336">
+  <suite started-at="2021-01-19T07:23:44Z" name="Suite" finished-at="2021-01-19T07:23:52Z" duration-ms="7953">
     <groups>
     </groups>
-    <test started-at="2021-01-19T02:35:19Z" name="Default test" finished-at="2021-01-19T02:35:27Z" duration-ms="7336">
+    <test started-at="2021-01-19T07:23:44Z" name="Apest" finished-at="2021-01-19T07:23:44Z" duration-ms="30">
+      <class name="Framework.AppTest">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Framework.AppTest@1df8b5b8]" started-at="2021-01-19T07:23:44Z" name="shouldAnswerWithTrue" finished-at="2021-01-19T07:23:44Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- Framework.AppTest -->
+    </test> <!-- Apest -->
+    <test started-at="2021-01-19T07:23:44Z" name="LognTest" finished-at="2021-01-19T07:23:52Z" duration-ms="7489">
       <class name="Framework.LoginTest">
-        <test-method signature="basePageNavigation()[pri:0, instance:Framework.LoginTest@609bcfb6]" started-at="2021-01-19T02:35:19Z" name="basePageNavigation" finished-at="2021-01-19T02:35:27Z" duration-ms="7320" status="PASS">
+        <test-method signature="basePageNavigation()[pri:0, instance:Framework.LoginTest@1cb3ec38]" started-at="2021-01-19T07:23:44Z" name="basePageNavigation" finished-at="2021-01-19T07:23:52Z" duration-ms="7469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
       </class> <!-- Framework.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LognTest -->
+    <test started-at="2021-01-19T07:23:44Z" name="VeriryTitleTest" finished-at="2021-01-19T07:23:52Z" duration-ms="7953">
+      <class name="Framework.ValidateTitleTest">
+        <test-method signature="validateTitle()[pri:0, instance:Framework.ValidateTitleTest@493dfb8e]" started-at="2021-01-19T07:23:44Z" name="validateTitle" finished-at="2021-01-19T07:23:52Z" duration-ms="7593" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [XXXXXX] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [XXXXXX] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at Framework.ValidateTitleTest.validateTitle(ValidateTitleTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+      </class> <!-- Framework.ValidateTitleTest -->
+    </test> <!-- VeriryTitleTest -->
+  </suite> <!-- Suite -->
 </testng-results>

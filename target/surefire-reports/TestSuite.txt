@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.361 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.114 s <<< FAILURE! - in TestSuite
+Framework.ValidateTitleTest.validateTitle  Time elapsed: 9.156 s  <<< FAILURE!
+java.lang.AssertionError: expected [XXXXXX] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]
+	at Framework.ValidateTitleTest.validateTitle(ValidateTitleTest.java:42)
+

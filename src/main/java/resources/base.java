@@ -1,5 +1,6 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,7 +8,10 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,9 +21,6 @@ import org.openqa.selenium.safari.SafariDriver;
 public class base {
 	
 	public WebDriver driver;
-	   
-
-	
 	
 	public WebDriver initializeDriver() throws IOException {
 
@@ -59,4 +60,35 @@ public class base {
 		// firefox
 		// safari
 	}
+	
+	public void getScreenShotPath(String testCaseName , WebDriver driver) throws IOException {
+		System.out.println("inside screensthhot method");
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		System.out.println("inside 1");
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		System.out.println("inside 2");
+	    String destinationFile = System.getProperty("user.dir")+"/reports/"+testCaseName+".png";
+	    System.out.println("inside 3");
+	    FileUtils.copyFile(source,new File(destinationFile));
+	    System.out.println("inside 4");
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
