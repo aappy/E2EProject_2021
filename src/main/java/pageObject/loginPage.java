@@ -9,11 +9,13 @@ import org.openqa.selenium.WebElement;
 import resources.base;
 
 public class loginPage {
-	   private static Logger log = LogManager.getLogger(loginPage.class.getClass());
+	
+	private static Logger log = LogManager.getLogger(loginPage.class.getClass());
 
 	public WebDriver driver;
 
 	public loginPage(WebDriver driver2) {
+		
 		this.driver = driver2;
 	}
 
@@ -21,14 +23,12 @@ public class loginPage {
 	By enterMessage = By.xpath("//*[@id='user-message']");
 
 	public WebElement enterMessage() {
-		log.warn("This is the warning   ....!"); 
-		log.info("returning entermessage driver element");
-		return driver.findElement(enterMessage);
-		
+	
+		return driver.findElement(enterMessage);		
 	}
 
 	public WebElement messageMethod() {
-       log.info("returning submit driver element");
+        log.info("returning submit driver element");
 		return driver.findElement(submit);
 	}
 }

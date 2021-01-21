@@ -31,8 +31,8 @@ public class base {
 		prop.load(fis);
 	  
 	    
-		String browserName = prop.getProperty("browser");
-
+	//	String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser"); //IMP:  System.getProperty use to provide jenkin parameter by accessing mvn test
 		
 		if (browserName.equals("chrome")) {
            
@@ -61,7 +61,8 @@ public class base {
 		// safari
 	}
 	
-	public void getScreenShotPath(String testCaseName , WebDriver driver) throws IOException {
+	public String getScreenShotPath(String testCaseName , WebDriver driver) throws IOException {
+	
 		System.out.println("inside screensthhot method");
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		System.out.println("inside 1");
@@ -71,6 +72,9 @@ public class base {
 	    System.out.println("inside 3");
 	    FileUtils.copyFile(source,new File(destinationFile));
 	    System.out.println("inside 4");
+	        
+	    return destinationFile;
+	    
 	}
 }
 

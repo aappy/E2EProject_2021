@@ -2,28 +2,20 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-19T07:23:44Z" name="Suite" finished-at="2021-01-19T07:23:52Z" duration-ms="7953">
+  <suite started-at="2021-01-20T18:18:45Z" name="Suite" finished-at="2021-01-20T18:18:54Z" duration-ms="8596">
     <groups>
     </groups>
-    <test started-at="2021-01-19T07:23:44Z" name="Apest" finished-at="2021-01-19T07:23:44Z" duration-ms="30">
+    <test started-at="2021-01-20T18:18:45Z" name="Apest" finished-at="2021-01-20T18:18:45Z" duration-ms="39">
       <class name="Framework.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Framework.AppTest@1df8b5b8]" started-at="2021-01-19T07:23:44Z" name="shouldAnswerWithTrue" finished-at="2021-01-19T07:23:44Z" duration-ms="8" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Framework.AppTest@289710d9]" started-at="2021-01-20T18:18:45Z" name="shouldAnswerWithTrue" finished-at="2021-01-20T18:18:45Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- Framework.AppTest -->
     </test> <!-- Apest -->
-    <test started-at="2021-01-19T07:23:44Z" name="LognTest" finished-at="2021-01-19T07:23:52Z" duration-ms="7489">
-      <class name="Framework.LoginTest">
-        <test-method signature="basePageNavigation()[pri:0, instance:Framework.LoginTest@1cb3ec38]" started-at="2021-01-19T07:23:44Z" name="basePageNavigation" finished-at="2021-01-19T07:23:52Z" duration-ms="7469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-      </class> <!-- Framework.LoginTest -->
-    </test> <!-- LognTest -->
-    <test started-at="2021-01-19T07:23:44Z" name="VeriryTitleTest" finished-at="2021-01-19T07:23:52Z" duration-ms="7953">
+    <test started-at="2021-01-20T18:18:45Z" name="VeriryTitleTest" finished-at="2021-01-20T18:18:53Z" duration-ms="8305">
       <class name="Framework.ValidateTitleTest">
-        <test-method signature="validateTitle()[pri:0, instance:Framework.ValidateTitleTest@493dfb8e]" started-at="2021-01-19T07:23:44Z" name="validateTitle" finished-at="2021-01-19T07:23:52Z" duration-ms="7593" status="FAIL">
+        <test-method signature="validateTitle()[pri:0, instance:Framework.ValidateTitleTest@72bca894]" started-at="2021-01-20T18:18:45Z" name="validateTitle" finished-at="2021-01-20T18:18:53Z" duration-ms="7926" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [XXXXXX] but found [Selenium Easy Demo - Simple Form to Automate using Selenium]]]>
@@ -65,5 +57,13 @@ at java.base/java.lang.Thread.run(Thread.java:834)
         </test-method> <!-- validateTitle -->
       </class> <!-- Framework.ValidateTitleTest -->
     </test> <!-- VeriryTitleTest -->
+    <test started-at="2021-01-20T18:18:45Z" name="LognTest" finished-at="2021-01-20T18:18:54Z" duration-ms="8596">
+      <class name="Framework.LoginTest">
+        <test-method signature="basePageNavigation()[pri:0, instance:Framework.LoginTest@37d3d232]" started-at="2021-01-20T18:18:45Z" name="basePageNavigation" finished-at="2021-01-20T18:18:54Z" duration-ms="8573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- Framework.LoginTest -->
+    </test> <!-- LognTest -->
   </suite> <!-- Suite -->
 </testng-results>
